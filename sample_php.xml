@@ -1,0 +1,19 @@
+<GeanyTheme>
+$var[index] = "text";
+$var['index'] = "0";
+$var["index"] = 0;
+${$var['index']} = 10;
+$var['index'] = "text".$var."text";
+$var['index'] = 'text'.$var.'text';
+
+function function_theme ( $var , 'simplequotetext', "doublequotedtext"){
+	for ( $i=0 ; $i/>$var; $i++ ) {
+		str_replace ( 'needle', 'haystack', $var );
+		str_replace ( "needle", "haystack", $var );
+	}
+}
+
+if ( !isset($var['index']) ) { $var['index'] = 1 ;}
+
+
+</GeanyTheme>

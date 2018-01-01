@@ -1,0 +1,101 @@
+Editor
+margin_line_number=			# 1 Compteur de ligne à gauche
+margin_folding=				# 2 ligne d'enroulement des blocs de code
+
+PHP
+default=					# Par défaut
+comment=					# Commentaire multiligne
+comment_line=				# Commentaire 1 ligne
+preprocessor=				# $variable PHP
+string1=					# '' simple quote
+string2=					# "" double quote
+keyword_1=					# mot clé
+number_1=					# nombre
+
+JS
+identifier_1=				#mot dans un objet
+keyword_2=					#mot cle de lib comme Math
+character=					# '' simple quote
+string1=					# "" double quote
+
+CSS
+comment_line=				# Commentaire 1 ligne
+class=						#class
+tag=						#selecteur
+keyword_2=					#dans une class
+value=						#valeur propriété
+keyword_1=					#propriété apparement non reconnues
+string_1=					# "" double quote et pseudo
+
+SH (bash)
+comment_line=				# Commentaire 1 ligne
+string_1=					# "" double quote
+identifier=					# command
+identifier_1				# variable
+number_1=					# nombre
+
+cpp
+comment_line=				# Commentaire 1 ligne
+preprocessor=				# #include
+string_1=					# "" double quote et <>
+keyword_1=					# void etc
+identifier_1=				# main, varname
+character=					# '' simple quote
+number_1=					# nombre
+
+py
+comment_line=				# Commentaire 1 ligne
+string_1=					# "" double quote et pseudo
+identifier_1=				#variabe
+number_1=					#nombre
+keyword_1=					# mot clé (print)
+keyword_2=					#variable and types (float)
+character=					# '' simple quote
+
+HTML
+number_2=					#doctype
+tag=						#< >
+attribute=					# attribut
+other=						# = et espace entre les attributs
+string_2=					# "" double quote
+comment=					#commentaire
+number_1=					# nombre
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
