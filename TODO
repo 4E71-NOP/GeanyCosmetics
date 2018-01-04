@@ -1,3 +1,19 @@
 
 Todo:
-  ☐ Item
+  ☐ FUTURE: Try to see if a colorpicker like spectrum is ok to work with (Especially if we can give it specific targets like class properties) @low 
+  ☐ FUTURE: Load a theme previously generated (means tagging the file to recognize offspings) @low 
+  ☐ FUTURE: GC_tabs.js feed the table automatically by listing what is in the tabbar div @low 
+  ☐ FUTURE: study efficicency of the syntax highlight algorithm using a twin string to solve the final color. It means a parser...
+
+  ☐ TODO: Add the current line and the cursor in every sample content @high 
+  ☐ TODO: do the other content type in AllDocument @high 
+  ☐ TODO: Try to simulate \t in the LikeInEditor div. @low 
+  ✔ TODO: Find a better way to store datas (class tree, divs etc.) and make the code faster. @done(18-01-04 23:19)
+  ✔ FIXME: fix the color picker behavior. depending on platform and browser focus becomes a problem. See next version evolution. @done(18-01-04 23:15)
+  ✔ TODO: Rearrange interface @done(18-01-04 23:16)
+  ✔ TODO: Make the edition function and le the user save it (file seletor) @done(18-01-04 23:17)
+  ✔ TODO: make sure this div do NOT overflow from his parent div. @done(18-01-04 23:17)
+  ✔ TODO: Change ConfiguratorEntriesTab so it has classnames as primary key and not numbers. @done(18-01-04 23:18)
+  ✔ TODO: Make StylesheetClassesList THE object to deal with in every situation (like storing ref to class and div etc.) @done(18-01-04 23:18)
+  
+

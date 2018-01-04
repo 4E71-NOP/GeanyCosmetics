@@ -10,7 +10,7 @@
 
 // TODO: do the other content type in AllDocument
 // TODO: [x] Make the edition function and le the user save it (file seletor)
-// TODO: make sure this div do NOT overflow from his parent div.
+// TODO: [x] make sure this div do NOT overflow from his parent div.
 // TODO: Try to simulate \t in the LikeInEditor div.
 // TODO: [x] Change ConfiguratorEntriesTab so it has classnames as primary key and not numbers.
 // TODO: [x] Make StylesheetClassesList THE object to deal with in every situation (like storing ref to class and div etc.)

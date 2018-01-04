@@ -8,13 +8,6 @@
 //
 //------------------------------------------------------------------
 
-// FIXME: [x] fix the color picker behavior. depending on platform and browser focus becomes a problem. See next version evolution.
-// TODO: [x] Rearrange interface
-
-// FUTURE: Try to see if a colorpicker like spectrum is ok to work with (Especially if we can give it specific targets like class properties)
-// FUTURE: Load a theme previously generated (means tagging the file to recognize offspings) 
-// FUTURE: Find a better way to store datas (class tree, divs etc.) and make the code faster.
-
 //--------------------------------------------------------------------------------
 //
 //
@@ -92,7 +85,8 @@ window.onload = function (){
 	Gebi("GC_card_B").style.visibility = "visible";
 	Gebi("GC_card_B").style.display = "block";
 
-	formatSampleText( sampleContent.c , "c", "LikeInEditorC" );
+	// Regexp was promising but then i failed. As i'm a lazy mollusk ...
+	// formatSampleText( sampleContent.c , "c", "LikeInEditorC" );
 	// formatSampleText( sampleContent.php , "php", "LikeInEditorPHP" );
 
 //	Main DIV visible 
