@@ -1,5 +1,5 @@
 .geany_allEditorBg { color:#000000; background-color:#808080; font-weight:normal; font-style:normal; }
-.geany_attribute { color:#000000; background-color:#EEEEEE; font-weight:bold; font-style:normal; }
+.geany_attribute { color:#800080; background-color:#EEEEEE; font-weight:bold; font-style:normal; }
 .geany_backtick { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
 .geany_brace_bad { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
 .geany_brace_good { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
@@ -37,8 +37,8 @@
 .geany_marker_mark { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
 .geany_marker_search { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
 .geany_number { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
-.geany_number_1 { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
-.geany_number_2 { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
+.geany_number_1 { color:#800080; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
+.geany_number_2 { color:#007F47; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
 .geany_operator { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
 .geany_other { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }
 .geany_parameter { color:#000000; background-color:#EEEEEE; font-weight:normal; font-style:normal; }

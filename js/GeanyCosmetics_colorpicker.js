@@ -39,22 +39,22 @@ function OpenColorSelector ( TargetClass , rule ){
 }
 
 function ColorSelectorValidation ( color ){
+	var elm, obj1;
 	if (selectorManagment.TargetClass == "geany_allEditorBg") {
-		for ( var elm in scl ) {
-			( scl[elm].on == 1 ) ? scl[elm].ObjClass.backgroundColor = color: 0;
+		for (elm in scl) {
+			scl[elm].ObjClass.backgroundColor = ( scl[elm].on == 1 && scl[elm].display == 1 ) ? color : '';
 		}
 		scl["geany_allEditorBg"].ObjClass.backgroundColor = color;
 	}
 	else {
-		var obj1 = scl[selectorManagment.TargetClass];
+		obj1 = scl[selectorManagment.TargetClass];
 		switch ( selectorManagment.rule ) {
-		case 'fg': 
+		case 'fg':
 			obj1.ObjClass.color = color;
 			obj1.ObjDivFg.style.backgroundColor = color;
 		break;
-		case 'bg': 
-			obj1.ObjClass.backgroundColor = color;		
-			obj1.ObjDivBg.style.backgroundColor = color;
+		case 'bg':
+			obj1.ObjClass.backgroundColor = color;
 		break;
 		}
 	}

@@ -56,7 +56,7 @@
 	margin-right: auto;
 	padding: 1em;
 	overflow-y: auto;
-	min-width: 576px;
+	min-width: 730px;
 }
 
 .doRender {
@@ -124,12 +124,13 @@ a:visited {
 	display: block;
 	text-align:left;
 	overflow: auto;
-	width: inherit;
+	width: 512px;
+	height: 600px
 }
 
 .codeFont {
-	font-family: "Monospace", "Consolas", "Arial";
-	font-size:10px;
+	font-family: "monospace", "Monospace", "Consolas", "Arial";
+	font-size:12px;
 }
 
 .tableConfig {

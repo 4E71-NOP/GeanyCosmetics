@@ -38,12 +38,139 @@
 </div>
 
 <div id="AllDocuments">
-<div id="LikeInEditorC"		class="geany_default codeFont doHide">Empty i failed miserably</div>
+<!-- -------------------------------------------------------------------------------- 	-->
+<div id="LikeInEditorC"		class="geany_default codeFont doHide">
+<span class="geany_preprocessor">#include</span> <span class="geany_string_1">&lt;stdio.h&gt;</span><br>
+<span class="geany_keyword_1">int</span> <span class="geany_identifier_1">main</span>()<br>
+{<br>
+<span class="geany_comment">/*<br>
+Multi line comment<br>
+*/</span><br>
+<span class="geany_comment_line">// printf() displays the string inside quotation</span><br>
+<span class="geany_identifier_1">printf</span>(<span class="geany_string_1">"Hello, World!"</span>);<br>
+    <span class="geany_keyword_1">return</span> 0;<br>
+}<br>
+<br>
+<span class="geany_keyword_1">int</span> <span class="geany_identifier_1">funcstuff</span>()<br>
+{<br>
+    <span class="geany_keyword_1">char</span> <span class="geany_identifier_1">charArr</span>[4];<br>
+    <span class="geany_keyword_1">int</span> <span class="geany_identifier_1">i</span>;<br>
+    <br>
+    <span class="geany_keyword_1">for</span> (<span class="geany_identifier_1">i</span> = 0; <span class="geany_identifier_1">i</span> &lt; 4; ++<span class="geany_identifier_1">i</span>)<br>
+    {<br>
+        <span class="geany_identifier_1">printf</span>(<span class="geany_string_1">"Address of charArr[%d] = %u\n"</span>, <span class="geany_identifier_1">i</span>, &<span class="geany_identifier_1">charArr</span>[<span class="geany_identifier_1">i</span>]);<br>
+    }<br>
+    <br>
+    <span class="geany_keyword_1">return</span> 0;<br>
+}<br>
+<br>
+<span class="geany_keyword_1">void</span> <span class="geany_identifier_1">swap</span> (<span class="geany_keyword_1">int</span> * <span class="geany_identifier_1">n1</span>, <span class="geany_keyword_1">int</span> * <span class="geany_identifier_1">n2</span>)<br>
+{<br>
+    <span class="geany_comment_line">// pointer n1 and n2 points to the address of num1 and num2 respectively</span><br>
+    <span class="geany_keyword_1">int</span> <span class="geany_identifier_1">temp</span>;<br>
+    <span class="geany_identifier_1">temp</span> = *<span class="geany_identifier_1">n1</span>;<br>
+    *<span class="geany_identifier_1">n1</span> = *<span class="geany_identifier_1">n2</span>;<br>
+    *<span class="geany_identifier_1">n2</span> = <span class="geany_identifier_1">temp</span>;<br>
+}<br>
+<br>
+ 
+
+</div>
+<!-- -------------------------------------------------------------------------------- 	-->
 <div id="LikeInEditorCPP"	class="geany_default codeFont doHide">Empty i failed miserably</div>
-<div id="LikeInEditorHTML"	class="geany_default codeFont doHide">Empty i failed miserably</div>
-<div id="LikeInEditorPHP"	class="geany_default codeFont doREnder">Empty i failed miserably</div>
+<!-- -------------------------------------------------------------------------------- 	-->
+<div id="LikeInEditorHTML"	class="geany_default codeFont doHide">
+
+&lt;!<span class="geany_number_2">DOCTYPE</span> <span class="geany_preprocessor">html</span>&gt;<br>
+<span class="geany_preprocessor">&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br></span>
+<span class="geany_keyword_1">body {background-color: f0f0f0;}<br>
+h1   {color: #002040;}<br>
+p    {color: #304050;}</span><br>
+<span class="geany_preprocessor">&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br></span>
+<br>
+<span class="geany_comment">&lt;!-- This is a comment --&gt;<br></span> 
+<span class="geany_preprocessor">&lt;h1</span><span class="geany_attribute">style</span><span class="geany_string_1">=</span><span class="geany_string_2">"text-align:center;"<span class="geany_preprocessor">&gt;</span><span class="geany_keyword_1">Centered Heading</span><span class="geany_preprocessor">&lt;/h1&gt;</span><br>
+<span class="geany_preprocessor">&lt;p </span><span class="geany_attribute">style</span><span class="geany_string_1">=</span><span class="geany_string_2">"text-align:center;"</span><span class="geany_preprocessor">&gt;</span><span class="geany_keyword_1">Centered paragraph.</span><span class="geany_preprocessor">&lt;/p&gt;</span><br>
+<span class="geany_preprocessor">&lt;p </span><span class="geany_attribute">style</span><span class="geany_string_1">='text-align:center;'</span><span class="geany_preprocessor">&gt;</span><span class="geany_keyword_1">Centered paragraph.</span><span class="geany_preprocessor">&lt;/p&gt;</span><br>
+&lt;img src<span class="geany_string_1">=</span><span class="geany_string_2">"img/image.jpg"</span> <span class="geany_attribute">width</span>=<span class="geany_number_1">100</span> <span class="geany_attribute">height</span>=<span class="geany_number_1">100</span>&gt;<br>
+<br>
+<br>
+<span class="geany_comment"> IE 5]&gt;This is IE 5&lt;br&gt;&lt;![endif]--&gt;<br>
+ IE 6]&gt;This is IE 6&lt;br&gt;&lt;![endif]--&gt;<br>
+ IE 7]&gt;This is IE 7&lt;br&gt;&lt;![endif]--&gt;<br>
+ IE 8]&gt;This is IE 8&lt;br&gt;&lt;![endif]--&gt;<br>
+ IE 9]&gt;This is IE 9&lt;br&gt;&lt;![endif]--&gt;</span><br>
+<br>
+<span class="geany_preprocessor">&lt;p&gt;</span>This is a paragraph.<span class="geany_preprocessor">&lt;/p&gt;</span><br>
+<span class="geany_preprocessor">&lt;p&gt;</span>This is a paragraph.<span class="geany_preprocessor">&lt;/p&gt;</span><br>
+<br>
+<span class="geany_preprocessor">&lt;p&gt;&lt;a</span> <span class="geany_attribute">href</span><span class="geany_string_1">=</span>"html_images.asp"&gt;HTML Images&lt;/a&gt; is a link to a page on this website.<span class="geany_preprocessor">&lt;/p&gt;</span><br>
+<br>
+<span class="geany_preprocessor">&lt;p&gt;&lt;a</span> <span class="geany_attribute">href</span><span class="geany_string_1">=</span>"https://www.w3.org/"&gt;W3C&lt;/a&gt; is a link to a website on the World Wide Web.<span class="geany_preprocessor">&lt;/p&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</span>
+</div>
+
+<!-- -------------------------------------------------------------------------------- 	-->
+<div id="LikeInEditorPHP"	class="geany_default codeFont doREnder">
+<span class="geany_number_2">&lt;?php</span><br>
+<span class="geany_comment">// ----------------------------<br>
+//	<br>
+//	Geany Cosmetics Online 2017<br>
+//	<br>
+<br>
+/*<br>
+Multiline comment<br>
+Multiline comment<br>
+*/<br>
+</span><br>
+<span class="geany_preprocessor">$Sample_var1 </span>= <span class="geany_number_1">1</span>;<br>
+<span class="geany_preprocessor">$Sample_var2</span>[<span class="geany_number_1">1</span>] = <span class="geany_string_1">'Sample'</span>;<br>
+<span class="geany_preprocessor">$Sample_var2</span>[<span class="geany_number_1">2</span>] = <span class="geany_string_2">"Sample"</span>;<br>
+<span class="geany_preprocessor">$Sample_var3</span> = <span class="geany_string_2">"Sample_table"</span>;<br>
+<span class="geany_preprocessor">$Sample_var4</span>[<span class="geany_string_1">'those_ids'</span>] = <span class="geany_number_1">1000</span>;<br>
+<br>
+<span class="geany_keyword_1">switch</span> ( <span class="geany_preprocessor">$Sample_var1</span> ) {<br>
+    <span class="geany_keyword_1">case</span> <span class="geany_number_1">1</span>:<br>
+    <span class="geany_preprocessor">$dbquery</span> = <span class="geany_keyword_1">query_dal</span>(<span class="geany_preprocessor">$Sample_var2</span>[<span class="geany_string_1">'2'</span>],<span class="geany_string_2">"<br>
+        SELECT * <br>
+        FROM "</span>.<span class="geany_preprocessor">$Sample_var3</span>.<span class="geany_string_2">" <br>
+        WHERE some_id = '"</span>.<span class="geany_preprocessor">$Sample_var4</span>[<span class="geany_string_1">'those_ids'</span>].<span class="geany_string_2">"'<br>
+        ;"</span>);<br>
+        <span class="geany_keyword_1">if</span> ( num_row_sql(<span class="geany_preprocessor">$dbquery</span>) &gt; <span class="geany_number_1">0</span> ) {<br>
+            <span class="geany_keyword_1">while</span> (<span class="geany_preprocessor">$dbp</span> = fetch_array_sql(<span class="geany_preprocessor">$dbquery</span>)) { <br>
+                <span class="geany_keyword_1">foreach</span> ( <span class="geany_preprocessor">$dbp</span> <span class="geany_keyword_1">as</span> <span class="geany_preprocessor">$A</span> =&gt; <span class="geany_preprocessor">$B</span> ) { <span class="geany_preprocessor">$some_table</span>[<span class="geany_preprocessor">$A</span>] = <span class="geany_preprocessor">$B;</span> } <br>
+            }<br>
+        }<br>
+        <span class="geany_keyword_1">break;</span><br>
+        <span class="geany_keyword_1">default:</span><br>
+        <span class="geany_keyword_1">echo</span> (<span class="geany_string_2">"Doing nothing!"</span>);<br>
+        <span class="geany_keyword_1">break;</span><br>
+}<br>
+<br>
+a_func (<span class="geany_string_2">"Some text"</span>, <span class="geany_number_1">2</span> , <span class="geany_string_1">'some other text'</span>);<br>
+<br>
+<span class="geany_preprocessor">$Sample_var1</span>++;<br>
+<span class="geany_preprocessor">$Sample_var1</span>--;<br>
+<span class="geany_preprocessor">$Sample_var1</span>+= <span class="geany_number_1">1</span>;<br>
+<span class="geany_preprocessor">$Sample_var1</span>-= <span class="geany_number_1">1</span>;<br>
+<br>
+<span class="geany_preprocessor">$Sample_var1</span> = <span class="geany_preprocessor">$Sample_var1</span> / <span class="geany_preprocessor">$Sample_var4</span>[<span class="geany_string_1">'those_ids'</span>] + <span class="geany_preprocessor">$Sample_var4</span>[<span class="geany_string_1">'those_ids'</span>] * <span class="geany_preprocessor">$Sample_var4</span>[<span class="geany_string_1">'those_ids'</span>] - <span class="geany_preprocessor">$Sample_var4</span>[<span class="geany_string_1">'those_ids'</span>];<br>
+<br>
+<br>
+?&gt;<br>
+</div>
+<!-- -------------------------------------------------------------------------------- 	-->
 <div id="LikeInEditorPY"	class="geany_default codeFont doHide">Empty i failed miserably</div>
+<!-- -------------------------------------------------------------------------------- 	-->
 <div id="LikeInEditorSH"	class="geany_default codeFont doHide">Empty i failed miserably</div>
+<!-- -------------------------------------------------------------------------------- 	-->
 </div>
 </div>
 
