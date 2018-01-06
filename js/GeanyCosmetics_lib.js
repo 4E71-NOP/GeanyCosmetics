@@ -243,6 +243,12 @@ var HTMLCompatTab = {
 //	5:{ convert:0,	reg:`\\$\[a-zA-Z0-9_\]\*`, 														f:"g",	cl:"geany_preprocessor",	prepared:`\\$[a-zA-Z0-9_]*`,						original:`\$[a-zA-Z0-9_]*` },
 //	6:{ convert:0,	reg:`\(default|echo|function|foreach|for|break|case|switch|\!isset\)\*`,		f:"g",	cl:"geany_keyword_1",		prepared:`(default|echo|function|foreach|for|break|case|switch|!isset\\)*`,	original:`(default|echo|function|foreach|for|break|case|switch|!isset\)*` },
 
+//[^(\/\/|\/\*|\*\|\"|\'|\;|\w|{|})]\s{0,}[\-\/+\-\(\)]? operators
+
+// https://github.com/kristian/RegexHighlightView/blob/master/Regex%20Highlight%20View/Syntax%20Definitions/c.plist
+// \/\/[^"\n\r]*(?:"[^"\n\r]*"[^"\n\r]*)*[\r\n]
+// (?!\/\/)(?!(\w|\/\*|\*\/|\s))(\{|\(|\[|\<|\+|\-|\/|\*|\,|\;|\=|\>|\]|\)|\})*(?!\w)
+
 var regexpClassTab = {
 	c:{
 		1:{ convert:0,	f:"g",	reg:/'[a-zA-Z0-9_]*[^"][a-zA-Z0-9_]*'/g,				cl:"geany_string_1",		prepared:`'[a-zA-Z0-9_]*[^"][a-zA-Z0-9_]*'`,		original:`'[a-zA-Z0-9_]*[^"][a-zA-Z0-9_]*'`},
