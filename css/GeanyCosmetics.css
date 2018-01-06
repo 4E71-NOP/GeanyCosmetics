@@ -110,23 +110,50 @@ a:visited {
 	border-radius: 5px 5px 0px 0px;
 	border: 1px solid #808080;
 	border-bottom: 0px;
-	padding: 1em;
+	padding: 0.45em 1.5em 0.25em 1.5em;
+	font-weight: bold;
+}
+
+.tab_active {
+	display:inline-block;
+	background-color: #FFc080; 
+	color: #4080A0;	
+	border-radius: 5px 5px 0px 0px;
+	border: 1px solid #808080;
+	border-bottom: 0px;
+	padding: 0.6em 1.5em 0.25em 1.5em;
 	font-weight: bold;
 }
 
 .AllDocuments{
 	display: block;
-	height: auto;
+	font-size : 0;	/* hack for white space */
 }
 
-.geany_default {
-	position: absolute;
-	display: block;
+.geany_editor {
+	width: 480px;
+	height: 600px;
+	white-space: pre;
 	text-align:left;
-	overflow: auto;
-	width: 512px;
-	height: 600px
+	overflow-x:hidden;
+	overflow-y:scroll;
+
 }
+
+.geany_margin1 {
+	text-align:left;
+	overflow:hidden;
+	width: 32px;
+	height: 600px;
+}
+
+.geany_margin2 {
+	text-align:center;
+	overflow:hidden;
+	width: 16px;
+	height: 600px;
+}
+
 
 .codeFont {
 	font-family: "monospace", "Monospace", "Consolas", "Arial";

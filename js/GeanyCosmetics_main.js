@@ -89,6 +89,8 @@ window.onload = function (){
 	// formatSampleText( sampleContent.c , "c", "LikeInEditorC" );
 	// formatSampleText( sampleContent.php , "php", "LikeInEditorPHP" );
 
+	Gebi("TabEditorC").click();
+
 //	Main DIV visible 
 	Gebi("page").style.visibility = 'visible';
 	Gebi("page").style.display = 'block';

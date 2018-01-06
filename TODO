@@ -6,8 +6,10 @@ Todo:
   ☐ FUTURE: study efficicency of the syntax highlight algorithm using a twin string to solve the final color. It means a parser...
 
   ☐ TODO: Add the current line and the cursor in every sample content @high 
-  ☐ TODO: do the other content type in AllDocument @high 
-  ☐ TODO: Try to simulate \t in the LikeInEditor div. @low 
+  ✔ TODO: add the margin_line_number and margin_folding @high @started(18-01-06 16:54) @done(18-01-06 20:21) @lasted(3 hours 27 minutes 21 seconds)
+  ✔ TODO: do the other content type in AllDocument @high @done(18-01-06 20:21)
+  ✔ TODO: \t in the LikeInEditor div. @low @started(18-01-06 18:28) @done(18-01-06 18:28) @lasted(36 seconds)
+  ✔ TODO: Highlight the clicked tab @done(18-01-06 16:46)
   ✔ TODO: Find a better way to store datas (class tree, divs etc.) and make the code faster. @done(18-01-04 23:19)
   ✔ FIXME: fix the color picker behavior. depending on platform and browser focus becomes a problem. See next version evolution. @done(18-01-04 23:15)
   ✔ TODO: Rearrange interface @done(18-01-04 23:16)
@@ -16,4 +18,8 @@ Todo:
   ✔ TODO: Change ConfiguratorEntriesTab so it has classnames as primary key and not numbers. @done(18-01-04 23:18)
   ✔ TODO: Make StylesheetClassesList THE object to deal with in every situation (like storing ref to class and div etc.) @done(18-01-04 23:18)
   
-
+  'Cmd/Ctrl+Shift+A' // Triggers  `Todo: Archive`
+  'Cmd/Ctrl+Enter' // Triggers `Todo: Toggle Box`
+  'Alt+D' // Triggers `Todo: Toggle Done`
+  'Alt+C' // Triggers `Todo: Toggle Cancel`
+  'Alt+S' // Triggers `Todo: Start`
