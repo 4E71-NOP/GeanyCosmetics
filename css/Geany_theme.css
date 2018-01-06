@@ -20,7 +20,7 @@
 .geany_function { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
 .geany_here_doc { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
 .geany_identifier { color:#6F5F7F; background-color:#DAF2F2; font-weight:normal; font-style:normal; }
-.geany_identifier_1 { color:#FF7E7E; background-color:#DAF2F2; font-weight:normal; font-style:normal; }
+.geany_identifier_1 { color:#FF7E7E; background-color:#DAF2F2; font-weight:normal; font-style:italic; }
 .geany_identifier_2 { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
 .geany_identifier_3 { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
 .geany_identifier_4 { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
@@ -39,8 +39,8 @@
 .geany_number { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
 .geany_number_1 { color:#800080; background-color:#DAF2F2; font-weight:normal; font-style:normal; }
 .geany_number_2 { color:#007F47; background-color:#DAF2F2; font-weight:normal; font-style:normal; }
-.geany_operator { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
-.geany_other { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
+.geany_operator { color:#BF0000; background-color:#DAF2F2; font-weight:normal; font-style:normal; }
+.geany_other { color:#BF0000; background-color:#DAF2F2; font-weight:normal; font-style:normal; }
 .geany_parameter { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }
 .geany_preprocessor { color:#BF0000; background-color:#DAF2F2; font-weight:bold; font-style:normal; }
 .geany_regex { color:#000000; background-color:#000000; font-weight:normal; font-style:normal; }

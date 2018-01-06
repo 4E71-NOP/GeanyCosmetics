@@ -6,6 +6,7 @@ Todo:
   ☐ FUTURE: study efficicency of the syntax highlight algorithm using a twin string to solve the final color. It means a parser...
 
   ☐ TODO: Add the current line and the cursor in every sample content @high 
+  ☐ TODO: Add some lines at the end of the file, make sure all values are set in the file @started(18-01-06 20:25)
   ✔ TODO: add the margin_line_number and margin_folding @high @started(18-01-06 16:54) @done(18-01-06 20:21) @lasted(3 hours 27 minutes 21 seconds)
   ✔ TODO: do the other content type in AllDocument @high @done(18-01-06 20:21)
   ✔ TODO: \t in the LikeInEditor div. @low @started(18-01-06 18:28) @done(18-01-06 18:28) @lasted(36 seconds)

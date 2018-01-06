@@ -8,7 +8,6 @@
 //
 //------------------------------------------------------------------
 
-
 var StylesheetClassesList = {
 	geany_allEditorBg:{ id:'geany_allEditorBg', text:'allEditorBg', on:1, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
 	geany_attribute:{ id:'geany_attribute', text:'attribute', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
@@ -51,7 +50,7 @@ var StylesheetClassesList = {
 	geany_number:{ id:'geany_number', text:'number', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
 	geany_number_1:{ id:'geany_number_1', text:'number_1', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
 	geany_number_2:{ id:'geany_number_2', text:'number_2', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_operator:{ id:'geany_operator', text:'operator', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_operator:{ id:'geany_operator', text:'operator', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
 	geany_other:{ id:'geany_other', text:'other', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
 	geany_parameter:{ id:'geany_parameter', text:'parameter', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
 	geany_preprocessor:{ id:'geany_preprocessor', text:'preprocessor', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
@@ -65,12 +64,7 @@ var StylesheetClassesList = {
 	geany_type:{ id:'geany_type', text:'type', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
 	geany_value:{ id:'geany_value', text:'value', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
 	geany_white_space:{ id:'geany_white_space', text:'white_space', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	};
-	
-	
-	
-	
-	
+};
 
 var cssFileIdx = -1;
 var scl = StylesheetClassesList;
@@ -88,7 +82,7 @@ function GeanyCosmeticsInitialization() {
 	tabJSJournal[tabJSJournalSw]("Geany_theme.css file index:"+cssFileIdx);
 
 //--------------------------------------------------------------------------------
-//	Setting up a table to be able to re-reference the classes with NAMES in the CSS object. 
+//	Setting up a table to be able to re-reference the CSS classes with NAMES in the CSS object. 
 //	Only numeric offset are available at DOM initialization it seems. 
 	var allRules = document.styleSheets[cssFileIdx].cssRules;
 	for ( elm in allRules ) {
@@ -205,6 +199,7 @@ function editTheme(){
 		cb = rgb2hex(scl[elm].ObjClass.backgroundColor).replace("#", "0x");
 		str += scl[elm].text +"="+cf+";"+cb+";"+vb+";"+vi+"\n";
 	}
+	str += "\n\n\n";
 	tabJSJournal[tabJSJournalSw](str);
 
 	link = document.createElement("a");
