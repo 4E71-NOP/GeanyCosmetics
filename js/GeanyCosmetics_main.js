@@ -61,6 +61,8 @@ function rgb2hex(rgb){
 //
 //--------------------------------------------------------------------------------
 window.onload = function (){
+	var timeS = (new Date()).getTime();
+	
 	var elm, v, tab;
 
 	GeanyCosmeticsInitialization();
@@ -86,14 +88,21 @@ window.onload = function (){
 	Gebi("GC_card_B").style.display = "block";
 
 	// Regexp was promising but then i failed. As i'm a lazy mollusk ...
-	// formatSampleText( sampleContent.c , "c", "LikeInEditorC" );
-	// formatSampleText( sampleContent.php , "php", "LikeInEditorPHP" );
+	formatSampleText( sampleContent.c		, "c",		"LikeInEditorC" );
+	formatSampleText( sampleContent.cpp		, "cpp",	"LikeInEditorCPP" );
+	formatSampleText( sampleContent.html	, "html",	"LikeInEditorHTML" );
+	formatSampleText( sampleContent.php		, "php",	"LikeInEditorPHP" );
+	formatSampleText( sampleContent.py		, "py",		"LikeInEditorPY" );
+	formatSampleText( sampleContent.sh		, "sh",		"LikeInEditorSH" );
 
 	Gebi("TabEditorC").click();
 
 //	Main DIV visible 
 	Gebi("page").style.visibility = 'visible';
 	Gebi("page").style.display = 'block';
+
+	var timeE = (new Date()).getTime();
+	tabJSJournal[tabJSJournalSw]("Initialization took " + (timeE-timeS)+" milliseconds");
 
 };
 

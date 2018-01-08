@@ -132,26 +132,24 @@ a:visited {
 
 .geany_editor {
 	width: 480px;
-	height: 600px;
+	height: 720px;
 	white-space: pre;
 	text-align:left;
-	overflow-x:hidden;
-	overflow-y:scroll;
-
+	overflow:auto;
 }
 
 .geany_margin1 {
 	text-align:left;
 	overflow:hidden;
 	width: 32px;
-	height: 600px;
+	height: 720px;
 }
 
 .geany_margin2 {
 	text-align:center;
 	overflow:hidden;
 	width: 16px;
-	height: 600px;
+	height: 720px;
 }
 
 

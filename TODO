@@ -3,10 +3,12 @@ Todo:
   ☐ FUTURE: Try to see if a colorpicker like spectrum is ok to work with (Especially if we can give it specific targets like class properties) @low 
   ☐ FUTURE: Load a theme previously generated (means tagging the file to recognize offspings) @low 
   ☐ FUTURE: GC_tabs.js feed the table automatically by listing what is in the tabbar div @low 
-  ☐ FUTURE: study efficicency of the syntax highlight algorithm using a twin string to solve the final color. It means a parser...
-
-  ☐ TODO: Add the current line and the cursor in every sample content @high 
+  
   ☐ TODO: Add some lines at the end of the file, make sure all values are set in the file @started(18-01-06 20:25)
+  ☐ TODO: Find a way to draw brace_ok brace_bad and selection in the text editor.
+  ✔ TODO: Taggin output file @done(18-01-08 23:04)
+  ✔ TODO: study efficicency of the syntax highlight algorithm using a twin string to solve the final color. It means a parser... @done(18-01-08 23:03)
+  ✔ TODO: Add the current line and the cursor in every sample content @high @done(18-01-08 23:03)
   ✔ TODO: add the margin_line_number and margin_folding @high @started(18-01-06 16:54) @done(18-01-06 20:21) @lasted(3 hours 27 minutes 21 seconds)
   ✔ TODO: do the other content type in AllDocument @high @done(18-01-06 20:21)
   ✔ TODO: \t in the LikeInEditor div. @low @started(18-01-06 18:28) @done(18-01-06 18:28) @lasted(36 seconds)
