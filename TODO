@@ -6,14 +6,13 @@ Todo:
   ☐ FUTURE: Find out how to make a font selection from available system font. A selection of 5 would do.
   ☐ FUTURE: Load a file from GCO and apply changes.
 
-  
-  ☐ TODO: Improve RegExp list and orders in list to make the editor view more accurate @started(18-01-08 23:19)
+  ✔ TODO: Improve RegExp list and orders in list to make the editor view more accurate @started(18-01-08 23:19) @done(18-01-10 00:08) @lasted(1 day 49 minutes 24 seconds)
   ☐ TODO: Add some lines at the end of the file, make sure all values are set in the file @started(18-01-06 20:25)
   ☐ TODO: Find a way to draw brace_ok brace_bad and selection in the text editor. @started(18-01-08 23:19)
-  ☐ TODO: Organize Class in the control table so they are grouped by function (like cursor and current line vs margin vs string etc) @started(18-01-08 23:35)
-  ☐ TODO: Make a special entry to make a td colspan with a title for the different sections. @started(18-01-08 23:35)
-  ☐ TODO: Display a text instead of the class name in the control table @started(18-01-08 23:35)
   ☐ TODO: Get tips in the control table to indicate that cursor bold is a block and italic makes it blink
+  ✔ TODO: Organize Class in the control table so they are grouped by function (like cursor and current line vs margin vs string etc) @started(18-01-08 23:35) @done(18-01-09 22:36) @lasted(23 hours 1 minute 8 seconds)
+  ✔ TODO: Make a special entry to make a td colspan with a title for the different sections. @started(18-01-08 23:35) @done(18-01-09 22:36) @lasted(23 hours 1 minute 7 seconds)
+  ✔ TODO: Display a text instead of the class name in the control table @started(18-01-08 23:35) @done(18-01-09 22:35) @lasted(23 hours 58 seconds)
   ✔ TODO: Taggin output file @done(18-01-08 23:04)
   ✔ TODO: study efficicency of the syntax highlight algorithm using a twin string to solve the final color. It means a parser... @done(18-01-08 23:03)
   ✔ TODO: Add the current line and the cursor in every sample content @high @done(18-01-08 23:03)

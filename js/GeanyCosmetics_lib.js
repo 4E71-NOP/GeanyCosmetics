@@ -8,65 +8,66 @@
 //
 //------------------------------------------------------------------
 var StylesheetClassesList = {
-	geany_allEditorBg:{ id:'geany_allEditorBg', text:'allEditorBg', on:1, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_attribute:{ id:'geany_attribute', text:'attribute', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_backtick:{ id:'geany_backtick', text:'backtick', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_brace_bad:{ id:'geany_brace_bad', text:'brace_bad', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_brace_good:{ id:'geany_brace_good', text:'brace_good', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_call_tips:{ id:'geany_call_tips', text:'call_tips', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_caret:{ id:'geany_caret', text:'caret', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_character:{ id:'geany_character', text:'character', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_class:{ id:'geany_class', text:'class', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_comment:{ id:'geany_comment', text:'comment', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_comment_doc:{ id:'geany_comment_doc', text:'comment_doc', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_comment_doc_keyword:{ id:'geany_comment_doc_keyword', text:'comment_doc_keyword', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_comment_doc_keyword_error:{ id:'geany_comment_doc_keyword_error', text:'comment_doc_keyword_error', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_comment_line:{ id:'geany_comment_line', text:'comment_line', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_comment_line_doc:{ id:'geany_comment_line_doc', text:'comment_line_doc', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_current_line:{ id:'geany_current_line', text:'current_line', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_decorator:{ id:'geany_decorator', text:'decorator', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_default:{ id:'geany_default', text:'default', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_fold_symbol_highlight:{ id:'geany_fold_symbol_highlight', text:'fold_symbol_highlight', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_function:{ id:'geany_function', text:'function', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_here_doc:{ id:'geany_here_doc', text:'here_doc', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_identifier:{ id:'geany_identifier', text:'identifier', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_identifier_1:{ id:'geany_identifier_1', text:'identifier_1', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_identifier_2:{ id:'geany_identifier_2', text:'identifier_2', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_identifier_3:{ id:'geany_identifier_3', text:'identifier_3', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_identifier_4:{ id:'geany_identifier_4', text:'identifier_4', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_indent_guide:{ id:'geany_indent_guide', text:'indent_guide', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_keyword:{ id:'geany_keyword', text:'keyword', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_keyword_1:{ id:'geany_keyword_1', text:'keyword_1', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_keyword_2:{ id:'geany_keyword_2', text:'keyword_2', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_keyword_3:{ id:'geany_keyword_3', text:'keyword_3', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_keyword_4:{ id:'geany_keyword_4', text:'keyword_4', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_label:{ id:'geany_label', text:'label', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_margin_folding:{ id:'geany_margin_folding', text:'margin_folding', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_margin_line_number:{ id:'geany_margin_line_number', text:'margin_line_number', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_marker_line:{ id:'geany_marker_line', text:'marker_line', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_marker_mark:{ id:'geany_marker_mark', text:'marker_mark', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_marker_search:{ id:'geany_marker_search', text:'marker_search', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_number:{ id:'geany_number', text:'number', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_number_1:{ id:'geany_number_1', text:'number_1', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_number_2:{ id:'geany_number_2', text:'number_2', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_operator:{ id:'geany_operator', text:'operator', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_other:{ id:'geany_other', text:'other', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_parameter:{ id:'geany_parameter', text:'parameter', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_preprocessor:{ id:'geany_preprocessor', text:'preprocessor', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_regex:{ id:'geany_regex', text:'regex', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_selection:{ id:'geany_selection', text:'selection', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_string:{ id:'geany_string', text:'string', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_string_1:{ id:'geany_string_1', text:'string_1', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_string_2:{ id:'geany_string_2', text:'string_2', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_string_eol:{ id:'geany_string_eol', text:'string_eol', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_tag:{ id:'geany_tag', text:'tag', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_type:{ id:'geany_type', text:'type', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_value:{ id:'geany_value', text:'value', on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	geany_white_space:{ id:'geany_white_space', text:'white_space', on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
-	};
-	
-	
-	
+	geany_allEditorBg:{ id:'geany_allEditorBg', original:'allEditorBg', ENGtxt:'All', FRtxt:'Tous', title:0, on:1, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_default:{ id:'geany_default', original:'default', ENGtxt:'Default', FRtxt:'Défaut', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_Title01:{ id:'geany_Title01', original:'Title01', ENGtxt:'Dynamic highlight', FRtxt:'Colorisation dynamique', title:1, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_caret:{ id:'geany_caret', original:'caret', ENGtxt:'Cursor', FRtxt:'Curseur', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_current_line:{ id:'geany_current_line', original:'current_line', ENGtxt:'Current line', FRtxt:'Ligne courante', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_brace_bad:{ id:'geany_brace_bad', original:'brace_bad', ENGtxt:'Orphan brace', FRtxt:'Parenthèse orpheline', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_brace_good:{ id:'geany_brace_good', original:'brace_good', ENGtxt:'Pair of brace', FRtxt:'Paire parenthèses', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_selection:{ id:'geany_selection', original:'selection', ENGtxt:'Selection', FRtxt:'Selection', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_Title02:{ id:'geany_Title02', original:'Title02', ENGtxt:'Syntax Highlighting', FRtxt:'Colorisation syntaxique', title:1, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_attribute:{ id:'geany_attribute', original:'attribute', ENGtxt:'Attribute', FRtxt:'Attribut', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_character:{ id:'geany_character', original:'character', ENGtxt:'Character string', FRtxt:'Character string', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_class:{ id:'geany_class', original:'class', ENGtxt:'Class', FRtxt:'Classe', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_comment:{ id:'geany_comment', original:'comment', ENGtxt:'Comment', FRtxt:'Commentaire', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_comment_line:{ id:'geany_comment_line', original:'comment_line', ENGtxt:'Line comment', FRtxt:'Commentaire de ligne', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_identifier:{ id:'geany_identifier', original:'identifier', ENGtxt:'Identifier A', FRtxt:'Identifiant A', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_identifier_1:{ id:'geany_identifier_1', original:'identifier_1', ENGtxt:'Identifier B', FRtxt:'Identifiant B', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_keyword_1:{ id:'geany_keyword_1', original:'keyword_1', ENGtxt:'Keyword A', FRtxt:'Mot clé A', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_keyword_2:{ id:'geany_keyword_2', original:'keyword_2', ENGtxt:'Keyword B', FRtxt:'Mot clé B', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_number_1:{ id:'geany_number_1', original:'number_1', ENGtxt:'Number A', FRtxt:'Nombre A', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_number_2:{ id:'geany_number_2', original:'number_2', ENGtxt:'Number B', FRtxt:'Nombre B', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_operator:{ id:'geany_operator', original:'operator', ENGtxt:'Operator', FRtxt:'Opérateur', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_other:{ id:'geany_other', original:'other', ENGtxt:'Other', FRtxt:'Autre', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_preprocessor:{ id:'geany_preprocessor', original:'preprocessor', ENGtxt:'Preprocessor', FRtxt:'Preprocesseur', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_string_1:{ id:'geany_string_1', original:'string_1', ENGtxt:'String A', FRtxt:'Chaine A', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_string_2:{ id:'geany_string_2', original:'string_2', ENGtxt:'String B', FRtxt:'Chaine B', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_tag:{ id:'geany_tag', original:'tag', ENGtxt:'Tag', FRtxt:'Tag', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_value:{ id:'geany_value', original:'value', ENGtxt:'Value', FRtxt:'Valeur', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_Title03:{ id:'geany_Title03', original:'Title03', ENGtxt:'Editor Style', FRtxt:'Style de l’éditeur', title:1, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_fold_symbol_highlight:{ id:'geany_fold_symbol_highlight', original:'fold_symbol_highlight', ENGtxt:'fold_symbol_highlight', FRtxt:'fold_symbol_highlight', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_margin_folding:{ id:'geany_margin_folding', original:'margin_folding', ENGtxt:'margin_folding', FRtxt:'margin_folding', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_margin_line_number:{ id:'geany_margin_line_number', original:'margin_line_number', ENGtxt:'margin_line_number', FRtxt:'margin_line_number', title:0, on:1, display:1, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_backtick:{ id:'geany_backtick', original:'backtick', ENGtxt:'backtick', FRtxt:'backtick', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_call_tips:{ id:'geany_call_tips', original:'call_tips', ENGtxt:'call_tips', FRtxt:'call_tips', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_comment_doc:{ id:'geany_comment_doc', original:'comment_doc', ENGtxt:'comment_doc', FRtxt:'comment_doc', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_comment_doc_keyword:{ id:'geany_comment_doc_keyword', original:'comment_doc_keyword', ENGtxt:'comment_doc_keyword', FRtxt:'comment_doc_keyword', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_comment_doc_keyword_error:{ id:'geany_comment_doc_keyword_error', original:'comment_doc_keyword_error', ENGtxt:'comment_doc_keyword_error', FRtxt:'comment_doc_keyword_error', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_comment_line_doc:{ id:'geany_comment_line_doc', original:'comment_line_doc', ENGtxt:'comment_line_doc', FRtxt:'comment_line_doc', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_decorator:{ id:'geany_decorator', original:'decorator', ENGtxt:'decorator', FRtxt:'decorator', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_function:{ id:'geany_function', original:'function', ENGtxt:'function', FRtxt:'function', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_here_doc:{ id:'geany_here_doc', original:'here_doc', ENGtxt:'here_doc', FRtxt:'here_doc', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_identifier_2:{ id:'geany_identifier_2', original:'identifier_2', ENGtxt:'identifier_2', FRtxt:'identifier_2', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_identifier_3:{ id:'geany_identifier_3', original:'identifier_3', ENGtxt:'identifier_3', FRtxt:'identifier_3', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_identifier_4:{ id:'geany_identifier_4', original:'identifier_4', ENGtxt:'identifier_4', FRtxt:'identifier_4', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_indent_guide:{ id:'geany_indent_guide', original:'indent_guide', ENGtxt:'indent_guide', FRtxt:'indent_guide', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_keyword:{ id:'geany_keyword', original:'keyword', ENGtxt:'keyword', FRtxt:'keyword', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_keyword_3:{ id:'geany_keyword_3', original:'keyword_3', ENGtxt:'keyword_3', FRtxt:'keyword_3', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_keyword_4:{ id:'geany_keyword_4', original:'keyword_4', ENGtxt:'keyword_4', FRtxt:'keyword_4', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_label:{ id:'geany_label', original:'label', ENGtxt:'label', FRtxt:'label', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_marker_line:{ id:'geany_marker_line', original:'marker_line', ENGtxt:'marker_line', FRtxt:'marker_line', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_marker_mark:{ id:'geany_marker_mark', original:'marker_mark', ENGtxt:'marker_mark', FRtxt:'marker_mark', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_marker_search:{ id:'geany_marker_search', original:'marker_search', ENGtxt:'marker_search', FRtxt:'marker_search', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_number:{ id:'geany_number', original:'number', ENGtxt:'number', FRtxt:'number', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_parameter:{ id:'geany_parameter', original:'parameter', ENGtxt:'parameter', FRtxt:'parameter', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_regex:{ id:'geany_regex', original:'regex', ENGtxt:'regex', FRtxt:'regex', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_string:{ id:'geany_string', original:'string', ENGtxt:'string', FRtxt:'string', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_string_eol:{ id:'geany_string_eol', original:'string_eol', ENGtxt:'string_eol', FRtxt:'string_eol', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_type:{ id:'geany_type', original:'type', ENGtxt:'type', FRtxt:'type', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+	geany_white_space:{ id:'geany_white_space', original:'white_space', ENGtxt:'white_space', FRtxt:'white_space', title:0, on:0, display:0, ObjClass:0, ObjDivFg:0, ObjDivBg:0, ObjChkBold:0, ObjChkItalic:0 },
+} ;
+
 
 var cssFileIdx = -1;
 var scl = StylesheetClassesList;
@@ -107,7 +108,7 @@ function GeanyCosmeticsInitialization() {
 	//--------------------------------------------------------------------------------
 	// Time for some indexing.
 	for ( elm in scl ) {
-		scl[elm].ObjClass = document.styleSheets[cssFileIdx].cssRules["."+elm].style;
+		scl[elm].ObjClass = (scl[elm].title == 0) ? document.styleSheets[cssFileIdx].cssRules["."+elm].style : 0;
 	}
 
 	//--------------------------------------------------------------------------------
@@ -120,14 +121,19 @@ function GeanyCosmeticsInitialization() {
 	contentTable += "<tr>";
 
 	for ( elm in scl ){
-		if ( scl[elm].display == 1 ){
-			contentTable += "<tr>" +
-			"<td>"+scl[elm].text+"</td>" +
-			"<td><div								id='div."+scl[elm].id+"_fg' style='width:16px; height:16px; border:1px solid #000000; background-color:"+scl[elm].ObjClass.color+"'	onclick=\"OpenColorSelector ('"+scl[elm].id+"','fg' );\"></div></td>" +
-			"<td><div		class='"+scl[elm].id+"'	id='div."+scl[elm].id+"_bg' style='width:16px; height:16px; border:1px solid #000000;'												onclick=\"OpenColorSelector ('"+scl[elm].id+"','bg' );\"></div></td>" +
-			"<td><input								id='checkbox."+scl[elm].id+"_bold' type='checkbox' 															onclick=\"SetProperty ('"+scl[elm].id+"','isBold', this );\" "+((scl[elm].ObjClass.fontWeight == "bold" ) ? 'checked':'' )+"></td>" +
-			"<td><input								id='checkbox."+scl[elm].id+"_italic' type='checkbox' 														onclick=\"SetProperty ('"+scl[elm].id+"','isItalic', this );\" "+((scl[elm].ObjClass.fontStyle == "italic" ) ? 'checked':'' )+"></td>"+
-			"</tr>";
+		if ( scl[elm].title == 1 ){
+			contentTable += "<tr class='tabletitle'>" + "<td colspan='5'>"+scl[elm].ENGtxt+"</td></tr>";
+		}
+		else {
+			if ( scl[elm].display == 1 ){
+				contentTable += "<tr>" +
+				"<td>"+scl[elm].ENGtxt+"</td>" +
+				"<td><div								id='div."+scl[elm].id+"_fg' style='width:16px; height:16px; border:1px solid #000000; background-color:"+scl[elm].ObjClass.color+"'	onclick=\"OpenColorSelector ('"+scl[elm].id+"','fg' );\"></div></td>" +
+				"<td><div		class='"+scl[elm].id+"'	id='div."+scl[elm].id+"_bg' style='width:16px; height:16px; border:1px solid #000000;'												onclick=\"OpenColorSelector ('"+scl[elm].id+"','bg' );\"></div></td>" +
+				"<td><input								id='checkbox."+scl[elm].id+"_bold' type='checkbox' 															onclick=\"SetProperty ('"+scl[elm].id+"','isBold', this );\" "+((scl[elm].ObjClass.fontWeight == "bold" ) ? 'checked':'' )+"></td>" +
+				"<td><input								id='checkbox."+scl[elm].id+"_italic' type='checkbox' 														onclick=\"SetProperty ('"+scl[elm].id+"','isItalic', this );\" "+((scl[elm].ObjClass.fontStyle == "italic" ) ? 'checked':'' )+"></td>"+
+				"</tr>";
+			}
 		}
 	}
 	configuratorTable.innerHTML = contentTable;
@@ -198,11 +204,17 @@ function editTheme(){
 	"[named_styles]\n";
 
 	for ( elm in scl ) {
-		vb = ( scl[elm].ObjClass.fontWeight == "bold") ? "true" : "false";
-		vi = ( scl[elm].ObjClass.fontStyle == "italic") ? "true" : "false";
-		cf = rgb2hex(scl[elm].ObjClass.color).replace("#", "0x");
-		cb = rgb2hex(scl[elm].ObjClass.backgroundColor).replace("#", "0x");
-		str += scl[elm].text +"="+cf+";"+cb+";"+vb+";"+vi+"\n";
+		if ( scl[elm].title == 0 ) {
+			vb = ( scl[elm].ObjClass.fontWeight == "bold") ? "true" : "false";
+			vi = ( scl[elm].ObjClass.fontStyle == "italic") ? "true" : "false";
+			cf = rgb2hex(scl[elm].ObjClass.color).replace("#", "0x");
+			cb = rgb2hex(scl[elm].ObjClass.backgroundColor).replace("#", "0x");
+			str += scl[elm].original +"="+cf+";"+cb+";"+vb+";"+vi+"\n";
+		}
+		else {
+			str += "\n\n";
+		}
+
 	}
 	str += "\n\n\n";
 	tabJSJournal[tabJSJournalSw](str);
@@ -236,20 +248,21 @@ var HTMLCompatTab = {
 var regexpClassTab = {
 	c:{
 		0:{ convert:0,	reg:0,								colorN:0,	cl:"geany_default",},
-		1:{ convert:1,	reg:/[^%\=\*\;\s\<\>\[\]\(\)\{\}\,\;\/\\]?(\w?\d?\w?)*[^%\=\*\;\s\<\>\[\]\(\)\{\}\,\;\/\\]?/g,
-															colorN:1,	cl:"geany_identifier_1",},
-		2:{ convert:1,	reg:/\s?(auto|break|case|char|const|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|register|return|short|signed|sizeof|static|struct|switch|typedef|union|unsigned|void|volatile|while)[^\w*]\s?/g,
-															colorN:2,	cl:"geany_keyword_1" },
-		3:{ convert:1,	reg:/#\w*/g,						colorN:3,	cl:"geany_preprocessor",},
-		n:{ convert:1,	reg:/[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]?\s?(\d+)\s?[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]?/g,
-															colorN:'n',	cl:"geany_number_1"},
-		s:{ convert:1,	reg:/'(.|\n)*?'/g, 					colorN:'s',	cl:"geany_string_1"},
-		t:{ convert:1,	reg:/"(.|\n)*?"/g, 					colorN:'t',	cl:"geany_string_2"},
+		1:{ convert:1,	reg:/[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]?\s?(\d+)\s?[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]?/g,
+															colorN:1,	cl:"geany_number_1"},
+		2:{ convert:1,	reg:/[^%\=\*\;\s\<\>\[\]\(\)\{\}\,\;\/\\]?(\w?\d?\w?)*[^%\=\*\;\s\<\>\[\]\(\)\{\}\,\;\/\\]?/g,
+															colorN:2,	cl:"geany_identifier_1",},
+		3:{ convert:1,	reg:/\s?(auto|break|case|char|const|continue|default|do|double|else|enum|extern|float|for|goto|if|int|long|register|return|short|signed|sizeof|static|struct|switch|typedef|union|unsigned|void|volatile|while)[^\w*]\s?/g,
+															colorN:3,	cl:"geany_keyword_1"	},
+		4:{ convert:1,	reg:/#\w*/g,						colorN:4,	cl:"geany_preprocessor",},
+		s:{ convert:1,	reg:/'(.|\n)*?'/g, 					colorN:'s',	cl:"geany_character"	},
+		t:{ convert:1,	reg:/"(.|\n)*?"/g, 					colorN:'t',	cl:"geany_string_1"		},
 		u:{ convert:1,	reg:/(\-+|\++|\/|\*|;|,|\=+|\!\=|\(|\)|\[|\]|\{|\})/g,
-											 				colorN:'u',	cl:"geany_operator"},
-		x:{ convert:1,	reg:/\/\*(.|\n)*\*\//g,				colorN:'x',	cl:"geany_comment"},
-		y:{ convert:1,	reg:/\/\/(.*|-*)\s/g,				colorN:'y',	cl:"geany_comment_line"},
-		z:{ convert:1,	reg:/ù/g,							colorN:'z',	cl:"geany_comment_line"},
+											 				colorN:'u',	cl:"geany_operator"		},
+		v:{ convert:1,	reg:/(£\/?\w*\.\w*§?)/g,			colorN:'v',	cl:"geany_string_1"		},
+		x:{ convert:1,	reg:/\/\*(.|\n)*\*\//g,				colorN:'x',	cl:"geany_comment"		},
+		y:{ convert:1,	reg:/\/\/(.*|-*)\s/g,				colorN:'y',	cl:"geany_comment_line"	},
+		z:{ convert:1,	reg:/ù/g,							colorN:'z',	cl:"geany_comment_line"	},
 
 
 	},
@@ -258,13 +271,15 @@ var regexpClassTab = {
 		1:{ convert:1,	reg:/[^%\=\*\;\s\<\>\[\]\(\)\{\}\,\;\/\\]?(\w?\d?\w?)*[^%\=\*\;\s\<\>\[\]\(\)\{\}\,\;\/\\]?/g,
 															colorN:1,	cl:"geany_identifier_1",},
 		9:{ convert:1,	reg:/(alignas|alignof|and|and_eq|asm|auto|bitand|bitor|bool|break|case|catch|char|char16_t|char32_t|class|compl|const|constexpr|const_cast|continue|decltype|default|delete|\sdo\s?[^\w]|double|dynamic_cast|else|enum|explicit|export|extern|false|float|for|friend|goto|if|inline|[^\w]int[^\w]|long|mutable|namespace|new|noexcept|not|not_eq|nullptr|operator|\sor\s?[^\w]|or_eq|private|protected|public|register|reinterpret_cast|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|true|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while|xor|xor_eq|override|final|\sif\s?|elif|else|endif|defined|ifdef|ifndef|define|undef|include|line|error|pragma)/g,
-															colorN:9,	cl:"geany_keyword_1" },
-		s:{ convert:1,	reg:/'(.|\n)*?'/g, 					colorN:'s',	cl:"geany_string_1"},
-		t:{ convert:1,	reg:/"(.|\n)*?"/g, 					colorN:'t',	cl:"geany_string_2"},
-		u:{ convert:1,	reg:/(\-+|\++|\/|\*|;|,|\=+|\!\=|\(|\)|\[|\]|\{|\})/g,
-											 				colorN:'u',	cl:"geany_operator"},
-		y:{ convert:1,	reg:/\/\*(.|\n)*\*\//g,				colorN:'y',	cl:"geany_comment"},
-		z:{ convert:1,	reg:/\/\/(.*|-*)\s/g,				colorN:'z',	cl:"geany_comment_line"},
+															colorN:9,	cl:"geany_keyword_1"	},
+		m:{ convert:1,	reg:/(\-+|\++|\/|\*|;|,|\=+|\!\=|\(|\)|\[|\]|\{|\}|\&|\%)/g,
+											 				colorN:'m',	cl:"geany_operator"		},
+		q:{ convert:1,	reg:/(£\/?\w*\.\w*§?)/g,			colorN:'q',	cl:"geany_string_1"		},
+		r:{ convert:1,	reg:/(#\w*)\s/g, 					colorN:'r',	cl:"geany_character"	},
+		s:{ convert:1,	reg:/'(.|\n)*?'/g, 					colorN:'s',	cl:"geany_character"	},
+		t:{ convert:1,	reg:/"(.|\n)*?"/g, 					colorN:'t',	cl:"geany_string_1"		},
+		y:{ convert:1,	reg:/\/\*(.|\n)*\*\//g,				colorN:'y',	cl:"geany_comment"		},
+		z:{ convert:1,	reg:/\/\/(.*|-*)\s/g,				colorN:'z',	cl:"geany_comment_line"	},
 	},
 	html:{
 		0:{ convert:0,	reg:0,								colorN:0,	cl:"geany_default"		},
@@ -277,15 +292,17 @@ var regexpClassTab = {
 		o:{ convert:1,	reg:/'(\=|\+)/g, 					colorN:'o',	cl:"geany_operator"		},
 		w:{ convert:1,	reg:/'(.|\n)*?'/g, 					colorN:'w',	cl:"geany_string_1"		},
 		x:{ convert:1,	reg:/"(.|\n)*?"/g, 					colorN:'x',	cl:"geany_string_2"		},
-		z:{ convert:1,	reg:/\<\!\-\-.*\-\-\>/g,			colorN:'z',	cl:"geany_comment"		},
+		z:{ convert:1,	reg:/(<!--.*-->)/g,					colorN:'z',	cl:"geany_comment_line"	},
 	},
 	php:{
 		0:{ convert:0,	reg:0,										colorN:0,	cl:"geany_default"			},
-		1:{ convert:1,	reg:/'[a-zA-Z0-9_]*[^"][a-zA-Z0-9_]*'/g,	colorN:1,	cl:"geany_string_1"			},
-		2:{ convert:1,	reg:/"(.|\n)*?"/g, 							colorN:2,	cl:"geany_string_2"			},
-		5:{ convert:1,	reg:/\$[a-zA-Z0-9_]*/g, 					colorN:5,	cl:"geany_preprocessor"		},
-		6:{ convert:1,	reg:/(default|echo|function|foreach|for|break|case|switch|!isset)/g,	
-																	colorN:6,	cl:"geany_keyword_1"		},
+		1:{ convert:1,	reg:/[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]?\s?(\d+)\s?[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]?/g,
+																	colorN:1,	cl:"geany_number_1"		},
+		2:{ convert:1,	reg:/'[a-zA-Z0-9_]*[^"][a-zA-Z0-9_]*'/g,	colorN:2,	cl:"geany_string_1"			},
+		3:{ convert:1,	reg:/"(.|\n)*?"/g, 							colorN:3,	cl:"geany_string_2"			},
+		4:{ convert:1,	reg:/\$[a-zA-Z0-9_]*/g, 					colorN:4,	cl:"geany_preprocessor"		},
+		5:{ convert:1,	reg:/(default|echo|function|foreach|for|break|case|switch|!isset)/g,	
+																	colorN:5,	cl:"geany_keyword_1"		},
 		u:{ convert:1,	reg:/(\-+|\++|\/|\*|;|,|\=+|\!\=|\(|\)|\[|\]|\{|\})/g,
 													 				colorN:'u',	cl:"geany_operator"			},
 		y:{ convert:1,	reg:/\/\*(.|\n)*\*\//g,						colorN:'y',	cl:"geany_comment"			},
@@ -297,12 +314,14 @@ var regexpClassTab = {
 																	colorN:1,	cl:"geany_identifier_1"		},
 		2:{ convert:1,	reg:/(\-+|\++|\/|\*|;|,|\=+|\!\=|\(|\)|\[|\]|\{|\})/g,
 																	colorN:2,	cl:"geany_operator"},
-		3:{ convert:1,	reg:/(sum|float|format|False|class|finally|\sis\s?|return|None|continue|\sfor\s?|lambda|try|True|def|from|nonlocal|while|and|del|global|\snot\s?|with|\sas\s?|elif|\sif\s*|\sor\s?|yield|assert|else|import|pass|break|except|\sin\s?|raise)/g,	
+		3:{ convert:1,	reg:/(\sand\s?|\sas\s?|\sassert\s?|\sbreak\s?|\sclass\s?|\scontinue\s?|\sdef\s?|\sdel\s?|\selif\s?|\selse\s?|\sexcept\s?|\sexec\s?|\sFalse\s?|\sfinally\s?|\sfor\s?|\sfrom\s?|\sglobal\s?|\sif\s?|\simport\s?|\sin\s?|\sis\s?|\slambda\s?|\sNone\s?|\snonlocal\s?|\snot\s?|\snot\s?|\sor\s?|\spass\s?|\spass\s?|\sprint\s?|\sraise\s?|\sreturn\s?|\sTrue\s?|\stry\s?|\swhile\s?|\swhile\s?|\swith\s?|\swith\s?|\syield\s?)/g,	
 																	colorN:3,	cl:"geany_keyword_1"		},
-		4:{ convert:1,	reg:/[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]\s?(\d+\.?\d*)\s?[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]?/g,
-																	colorN:4,	cl:"geany_number_1"},
-		5:{ convert:1,	reg:/'.*[^"].*'/g,							colorN:5,	cl:"geany_character"		},
-		6:{ convert:1,	reg:/"(.|\n)*?"/g, 							colorN:6,	cl:"geany_string_1"			},
+		4:{ convert:1,	reg:/(\sfloat\s?|\sint\s?|\sstr\s?|(\s|\.)format\s?|\sraw_input\s?|\ssum\s?)/g,	
+																	colorN:4,	cl:"geany_keyword_2"		},
+		5:{ convert:1,	reg:/[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]\s?(\d+\.?\d*)\s?[^\a-zA-Z=\{\}\<\>\[\]\(\)\#\;]?/g,
+																	colorN:5,	cl:"geany_number_1"			},
+		6:{ convert:1,	reg:/'.*[^"].*'/g,							colorN:6,	cl:"geany_character"		},
+		7:{ convert:1,	reg:/"(.|\n)*?"/g, 							colorN:7,	cl:"geany_string_1"			},
 		z:{ convert:1,	reg:/#.*/g,									colorN:'z',	cl:"geany_comment_line"		},
 	},
 	sh:{
@@ -523,22 +542,33 @@ switch ( $Sample_var1 ) {
 		FROM ".$Sample_var3." 
 		WHERE some_id = '".$Sample_var4['those_ids']."'
 		;");
-		while ($dbp = fetch_array_sql($dbquery)) { 
-			foreach ( $dbp as $A => $B ) { $some_table[$A] = $B; } 
+		if ( num_row_sql($dbquery) > 0 ) {
+			while ($dbp = fetch_array_sql($dbquery)) { 
+				foreach ( $dbp as $A => $B ) { $some_table[$A] = $B; } 
+			}
 		}
 	break;
 	default:
-		echo ("Doing nothing!")
+		echo ("Doing nothing!");
 	break;
 }
 
 a_func ("Some text", 2 , 'some other text');
 
+$Sample_var1++;
+$Sample_var1--;
+$Sample_var1 += 1;
+$Sample_var1 -= 1;
+
+$Sample_var1 = $Sample_var1 / $Sample_var4['those_ids'] + $Sample_var4['those_ids'] * $Sample_var4['those_ids'] - $Sample_var4['those_ids'];
+
 ?>
 `,
 
 py:`\
+#!/usr/bin/env python
 # This program adds two numbers
+
 num1 = 1.5
 num2 = 6.3
 
@@ -547,6 +577,29 @@ sum = float(num1) + float(num2)
 
 # Display the sum
 print('The sum of {0} and {1} is {2}'.format(num1, num2, sum))
+
+
+#get the username from a prompt
+username = raw_input("Login: >> ")
+
+#list of allowed users
+user1 = "Jack"
+user2 = "Jill"
+
+#control that the user belongs to the list of allowed users
+if username == user1:
+    print "Access granted"
+elif username == user2:
+    print "Welcome to the system"
+else:
+    print "Access denied"
+
+
+#!/usr/bin/env python
+kmh = int(raw_input("Enter km/h: "))
+mph =  0.6214 * kmh
+print "Speed:", kmh, "KM/H = ", mph, "MPH"
+
 
 `,
 
